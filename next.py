@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 """
  File Name : next.py
 
@@ -48,7 +48,8 @@ def get_left_half(num):
     function to get the left half of a string representation of a starting
     numerical value.
     """
-    return str(num)[:len(str(num))/2]
+    print(num)
+    return str(num)[:int(len(str(num))/2)]
 
 
 def get_middle(num):
@@ -74,6 +75,7 @@ def main():
     the main function calls the next_palindrome function and prints the result
     """
     num = int(sys.argv[1])
+    print(num)
     palindrome = next_palindrome(num)
     print(
         "With a starting value of {}, the next palindrome is {}.".format(
