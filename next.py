@@ -48,7 +48,6 @@ def get_left_half(num):
     function to get the left half of a string representation of a starting
     numerical value.
     """
-    print(num)
     return str(num)[:int(len(str(num))/2)]
 
 
